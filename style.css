@@ -1,0 +1,590 @@
+/* =========== Import Fonts From Google =========== */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;800;900&family=Outfit:wght@300&display=swap");
+
+/* ======================= Roots ======================== */
+:root {
+  /* === Colors === */
+  --title-color: #151515;
+  --subtitle-color: #444444;
+  --third-color: #d5966c;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* ====================== Generals ======================== */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Big Shoulders Display", cursive;
+  background-color: #fcfaf9;
+}
+
+/* === main === */
+/* - Left Div - */
+main .main-image {
+  width: 100%;
+  height: 240px;
+  background-image: url(images/mobile/image-hero@2x.jpg);
+  background-size: cover;
+}
+
+.wrapper {
+  margin: 0rem 1rem;
+}
+
+/* - Right Div - */
+main .right-div h1 .span-main {
+  display: block;
+}
+
+main .right-div h1 {
+  color: var(--title-color);
+
+  font-weight: 900;
+  line-height: 55px;
+  font-size: 60px;
+}
+
+main .right-div .right-paragraph {
+  color: var(--subtitle-color);
+
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* - Button - */
+.main-button {
+  width: 204px;
+  height: 72px;
+
+  background-color: var(--title-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  margin-top: 32px;
+}
+
+.main-button p {
+  font-family: "Big Shoulders Display" !important;
+  color: #ffffff !important;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 3.64px;
+}
+
+.main-button::before {
+  position: absolute;
+  content: "";
+  width: 56px;
+  height: 72px;
+  background-image: url(images/mobile/button-right.png);
+  right: -3.5rem;
+}
+
+.main-button:hover {
+  background-color: var(--third-color);
+}
+
+main .button-container-main:hover .main-button::before {
+  background-image: url(images/desktop/Group.png);
+}
+
+/* ============== Section One ============== */
+.section-one {
+  margin-top: 7.5rem;
+}
+
+/* - Section One | Grid - */
+.container {
+  display: grid;
+  row-gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 310px 223px 480px 200px 293px;
+}
+
+/* - Content 1 - */
+#content1 img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* - Content 2 - */
+#content2 h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 45px;
+  margin: 0px 0px 21px 0px;
+}
+
+#content2 h1 span {
+  display: block;
+}
+
+#content2 p {
+  margin: 0;
+
+  color: var(--subtitle-color);
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* - Content 3 - */
+#content3 img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+}
+
+/* - Content 4 - */
+#content4 img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* - Content 5 - */
+#content5 {
+  color: #ffffff;
+  background-color: var(--title-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#content5 h1 {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 45px;
+
+  margin: 28px 0px 24px 0px;
+}
+
+#content5 p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0.7;
+}
+
+/* ============== Footer ============== */
+footer {
+  color: #ffffff;
+  background-color: var(--title-color);
+  height: 336px;
+  margin-top: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .wrapper {
+  margin: 0px 32px;
+}
+
+footer h4 {
+  font-size: 25px;
+  width: 110.05px;
+  margin-top: 48px;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+  margin-top: -1.5rem;
+}
+
+footer p {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  opacity: 0.7;
+}
+
+.icon-container {
+  margin-top: 2.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.icon-container svg {
+  margin-right: 1rem;
+}
+
+/* ====================== Media Screen | 768px ======================== */
+@media only screen and (min-width: 768px) {
+  /* ======== Main ======== */
+  .main-container {
+    display: flex;
+  }
+
+  main .main-image {
+    width: 437px;
+    height: 700px;
+    background-image: url(images/tablet/image-hero@2x.jpg);
+    background-size: cover;
+  }
+
+  main .right-div {
+    margin: 8rem 0rem 0rem -4rem;
+  }
+
+  /* === Section One === */
+  .section-one .s-wraper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    display: grid !important;
+    row-gap: -1rem !important;
+    column-gap: 1rem;
+    grid-template-rows: 400px 360px 360px;
+    grid-template-areas:
+      "container2 container1"
+      "container3 container4"
+      "container3  container5" !important;
+  }
+
+  /* - Content 1 - */
+  #content1 {
+    width: 398px !important;
+    height: 400px;
+    margin-left: -4rem;
+    grid-area: container1;
+  }
+
+  @media only screen and (min-width: 790px) {
+    #content1 {
+      width: 100% !important;
+      margin-left: 0rem;
+    }
+  }
+
+  #content1 img {
+    width: 100%;
+    height: 400px;
+  }
+
+  /* - Content 2 - */
+  #content2 {
+    width: 223px;
+    grid-area: container2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* - Content 3 - */
+  #content3 {
+    width: 398px;
+    grid-area: container3;
+  }
+
+  #content3 img {
+    height: 736px;
+  }
+
+  /* - Content 4 - */
+  #content4 {
+    grid-area: container4;
+    height: 360px;
+  }
+
+  #content4 img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+  }
+
+  /* - Content 5 - */
+  #content5 {
+    grid-area: container5;
+  }
+
+  /* ============== Footer ============== */
+  footer .wrapper {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer h4 {
+    margin: 0;
+  }
+
+  footer p {
+    margin: 0;
+    width: 281px;
+  }
+
+  footer .icon-container {
+    margin: 0;
+  }
+}
+
+/* ====================== Media Screen | 1430px ======================== */
+@media only screen and (min-width: 1439px) {
+  /* === Main === */
+  .main-image-container {
+    display: flex;
+  }
+
+  main .main-image {
+    width: 540px;
+    height: 799px;
+  }
+
+  .black-background {
+    width: 450px;
+    height: 799px;
+    background-color: var(--title-color);
+  }
+  main .right-div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main .right-div h1 {
+    font-size: 96px;
+    line-height: 88px;
+
+    width: 514px;
+    color: #ffffff;
+    margin-left: -48.6rem;
+    margin-right: 15.5rem;
+    z-index: 999;
+  }
+
+  main .right-div .main-span-div {
+    position: relative;
+  }
+
+  main .right-div .main-span-div::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 77px;
+    background-color: var(--title-color);
+    right: 0.1rem;
+    top: 1.1rem;
+  }
+
+  main .right-div .black-span {
+    color: var(--title-color);
+  }
+
+  main .right-div .right-paragraph {
+    width: 350px;
+    font-size: 22px;
+    margin-bottom: 4rem;
+  }
+
+  /* === Section One === */
+  /* - Content 2 - */
+  #content2 {
+    width: 300px;
+  }
+
+  #content2 h1 {
+    margin-left: -1rem;
+  }
+
+  /* - Content 3 - */
+  #content3 {
+    width: 635px;
+    grid-area: container3;
+  }
+
+  #content3 img {
+    height: 736px;
+  }
+
+  /* === Footer === */
+  footer {
+    margin-top: 180px;
+    height: 244px;
+  }
+
+  footer .footer-wrapper-main {
+    margin: 0rem 165px;
+  }
+
+  footer .footer-wrapper-main p {
+    width: 430px;
+  }
+}
+
+.main-footer .icon-container svg {
+  fill: #ffffff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.main-footer .icon-container svg:hover {
+  fill: var(--third-color);
+}
+
+/* ================== Section One ================== */
+/* - Map - */
+.map-container {
+  position: relative;
+}
+
+/* - Button - */
+.location-button {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+}
+
+.location-button .main-button {
+  margin-top: 0;
+  margin-left: 3rem;
+}
+
+.location-button .main-button::before {
+  left: -3rem;
+  transform: rotateZ(180deg);
+}
+
+.location-button:hover .main-button::before {
+  background-image: url(/images/desktop/Group.png) !important;
+}
+
+/* - Map - */
+#map {
+  width: 100%;
+  height: 80vh;
+}
+
+.leaflet-control-container {
+  display: none;
+}
+
+/* ================== Section Two ================== */
+.location-section-two {
+  width: 100%;
+  height: 493px;
+  color: #ffffff;
+  background-color: var(--title-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-section-two h1 {
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: -0.8rem;
+}
+
+.location-section-two h3 {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--third-color);
+}
+
+.location-section-two .location-paragraph {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0.8;
+}
+
+.location-section-two .location-paragraph span {
+  display: block;
+}
+
+.location-section-two .paragraph {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0.8;
+}
+
+/* ================== Footer ================== */
+.location-footer {
+  margin-top: 0;
+  color: var(--title-color);
+  background-color: var(--third-color);
+}
+
+.location-footer svg {
+  fill: var(--title-color);
+}
+
+/* ====================== Media Screen | 768px ======================== */
+@media only screen and (min-width: 768px) {
+  .location-section-two .wrapper {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  .location-section-two .wrapper .loc-left-div {
+    width: 223px;
+    margin-right: 4rem;
+  }
+
+  .location-section-two .wrapper .loc-right-div {
+    width: 398px;
+  }
+
+  .location-section-two .wrapper .loc-right-div h3 {
+    margin-top: 0rem;
+  }
+}
+
+/* ====================== Media Screen | 1430px ======================== */
+@media only screen and (min-width: 1439px) {
+  .location-button {
+    left: 9rem;
+  }
+
+  .location-section-two .wrapper {
+    width: 100%;
+  }
+
+  .location-section-two .wrapper .loc-left-div h1 {
+    font-size: 70px;
+  }
+}
+
+.location-footer .icon-container svg {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.location-footer .icon-container svg:hover {
+  fill: #ffffff;
+}
